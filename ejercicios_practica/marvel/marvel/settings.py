@@ -49,19 +49,20 @@ LOCAL_APPS = ['e_commerce']
 
 INSTALLED_APPS = BASE_APPS + THIRD_APPS + LOCAL_APPS
 
-# INSTALLED_APPS = [
-#     'django.contrib.admin',
-#     'django.contrib.auth',
-#     'django.contrib.contenttypes',
-#     'django.contrib.sessions',
-#     'django.contrib.messages',
-#     'django.contrib.staticfiles',
-#     # Local apps: Acá ponemos el nombre de las carpetas
-#     # de nuestras aplicaciones.
-#     'e_commerce',
-#     # Third party apps: acá vamos agregando las aplicaciones de terceros,
-#     # extensiones de Django.
-# ]
+INSTALLED_APPS = [
+     'django.contrib.admin',
+     'django.contrib.auth',
+     'django.contrib.contenttypes',
+     'django.contrib.sessions',
+     'django.contrib.messages',
+     'django.contrib.staticfiles',
+     # Local apps: Acá ponemos el nombre de las carpetas
+     # de nuestras aplicaciones.
+     'e_commerce',
+     # Third party apps: acá vamos agregando las aplicaciones de terceros,
+     # extensiones de Django.
+     'rest_framework',
+ ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
