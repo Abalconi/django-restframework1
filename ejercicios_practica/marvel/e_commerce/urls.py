@@ -1,13 +1,15 @@
-from django.urls import path
-from .api.views import comic_list_api_view, comic_retrieve_api_view, comic_create_api_view, comic_list_filtered_api_view
+from django.urls import path, include
+from .views import hello_world_view, request_data_view, get_comics, purchased_item
 
 urlpatterns = [
-    path('comic-list/', comic_list_api_view, name='comic_list_api_view'),
-    path('comic-retrieve/', comic_retrieve_api_view, name='comic_retrieve_api_view'),
-    path('comic-create/', comic_create_api_view, name='comic_create_api_view'),
-    path('comic-list-filtered/', comic_list_filtered_api_view, name='comic_list_filtered_api_view'),
-    
+    path('hello-world/', hello_world_view),
+    path('request-data/', request_data_view),
+    path('get-comics/', get_comics),
+    path('purchased-item/', purchased_item),
+    path('api/', include('e_commerce.api.urls')),  # Incluir las rutas de la API
+    # Otras rutas específicas de tu aplicación e_commerce...
 ]
+
 
 
 
