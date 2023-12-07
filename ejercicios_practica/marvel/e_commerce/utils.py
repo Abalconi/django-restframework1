@@ -13,8 +13,7 @@ MARVEL_DICT = {
     "TS": TS,
     "TO_HASH": TO_HASH,
     "HASHED": hashlib.md5(TO_HASH.encode()),
-    "URL": "https://gateway.marvel.com/v1/public/comics"
-
+    "URL": "http://gateway.marvel.com/v1/public/" + "comics",
 }
 
 
